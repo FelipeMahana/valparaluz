@@ -1,0 +1,439 @@
+body {
+    margin: 1.5em;
+    font-family: sans-serif;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+.hero-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('img/imagen-inicial.JPG');
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 20%;
+    width: 100%;
+    height: 140vh;
+    z-index: -1;
+}
+
+.instagram-center{
+    margin-top: 5em;
+    text-align: center;
+}
+
+
+.logo{
+    color: orange;
+    font-weight: bold;
+}
+.logo-span{
+    color: white;
+    font-weight: bold;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-svg{
+    width: 3em;
+    margin-top: -.6em;
+    cursor: pointer;
+}
+nav{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.925);
+    z-index: 99;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    
+}
+.nav-menu{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+}
+.close-nav{
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+}
+.a-menu{
+    color: black;
+    padding: .75em 2em;
+    display: block;
+}
+.a-menu:hover{
+    background: rgb(235, 235, 235);
+}
+
+h1{
+    font-size: 3rem;
+    margin-top: 1.5em;
+    line-height: 3.3rem;
+}
+
+article.hero{
+    height: 130vh;
+}
+.p-hero{
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 10px rgb(36, 35, 35);
+    color: white;
+}
+.h2-hero{
+    text-shadow: 2px 2px 10px rgb(36, 35, 35);
+    color: white;
+}
+.h1-hero{
+    text-shadow: 2px 2px 10px rgb(36, 35, 35);
+    color: white;
+}
+.p-hero-instagram{
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 10px rgb(36, 35, 35);
+    color: white; 
+}
+
+.habitaciones{
+    margin-top: 6em;
+    margin-bottom: 0.5em;
+}
+.nuestro-barrio{
+    margin-top: 6em;
+    margin-bottom: 0.5em;
+}
+
+.box-habitaciones{
+    margin-bottom: 5em;
+    box-shadow: 2px 2px 10px rgba(12, 5, 0, 0.3);
+    /*box-shadow: 2px 2px 10px rgba(255, 106, 0, 0.3);*/
+    background-color: rgb(255, 250, 245);
+    border-radius: 1em;    
+}
+
+.img-habitacion{
+    width: 100%;
+    object-fit: cover;
+    height: 22em;
+    /*z-index: -99;*/
+}
+.h3-habitacion{
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.p-habitacion{
+    line-height: 1.5rem; 
+    font-size: 1.15rem;
+}
+.p-habitacion-2{
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.15rem;
+}
+.p-hab-disp{
+    font-weight: bold;
+    font-size: .95rem;
+    text-align: center;
+}
+.button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.75em;
+    padding-bottom: 0.75em;
+}
+
+a.button-center{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:.16em solid rgba(255,255,255,0);
+    border-radius:3em;
+    box-sizing: border-box;
+    color:white;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all .2s;
+    background-color: rgb(225, 145, 0);
+    width: 9rem;
+}
+a.button-center:hover{
+    background-color:rgb(255, 180, 80);
+}
+
+.open-nav{
+    transform: translateX(0%);
+}
+
+.img-servicios{
+    height: 80px;
+}
+.servicios-con-imagen{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1.5rem;
+    text-align: center; 
+}
+.p-servicios-texto{
+    font-weight: bold;
+}
+.contenedor-mapa{
+    width: 100%;
+    height: 100vh;
+}
+.mapa-bellavista{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+.interes-mapa{
+    display: none;
+}
+.lista-contactos{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: black;
+}
+.lista-texto{
+    font-size: 1.15em;
+    margin: 0;
+    color: black
+}
+.lista-texto:hover{
+    background: none;
+    text-decoration: underline;
+}
+
+.seccion-informacion{
+    text-align: center;
+}
+.p-intro-habitacion{
+    font-size: 1.15rem;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+.p-esapcios-comunes{
+    font-size: 1.15rem;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+.img-espacio-comun{
+    width: 100%;
+    object-fit: cover;
+    height: 22em;
+    grid-row: span 2;
+    border-radius: 1em;
+    box-shadow: 2px 2px 10px rgba(12, 5, 0, 0.3);
+}
+.texto-secundario{
+    grid-column: span 3;
+}
+
+
+
+@media only screen and (min-width: 700px){
+
+    body{
+        margin: 1.5em 5em;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .img-servicios{
+        height: 100px;
+    }
+    .servicios-con-imagen{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1.5rem;
+        text-align: center; 
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    /*arreglar font-size*/
+
+    .grid-espacios-comunes{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5em;
+    }
+    .texto-secundario{
+        grid-column: span 3;
+        grid-column: 2;
+    }
+
+    .grid-lista-contactos-grande{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 1.5rem;
+        text-align: center;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .contactos-mapa{
+        text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .header-svg{
+        display: none;
+    }
+    nav{
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+    .close-nav{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+        margin: 0;
+    }
+    .a-menu{
+        color: white;
+        text-shadow: 2px 2px 5px black;
+        font-size: .95rem;
+        padding: .5em 1.5em;
+    }
+    .a-menu:hover{
+        background: none;
+        text-decoration: underline;
+    }
+    .hero-img{
+        height: 70vh;
+    }
+    article.hero{
+        height: 62vh;
+    }
+
+    .box-habitaciones{
+        margin-bottom: 8em;        
+    }
+    
+    .contenido-habitacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+    .img-habitacion{
+        grid-column: 2;
+        grid-row: span 3;
+        height: 100%;
+        border-radius: 1em 0em 1em 0em;
+    }
+    .h3-habitacion{
+        grid-column: span 2;
+        font-size: 1.8em;
+    }
+    .p-habitacion{
+        grid-column: 1;
+        text-align: center;
+        font-size: 1.5em;
+        margin: 1em;
+        margin-top: 2em;
+    }
+    .p-habitacion-2{
+        font-size: 1.5em;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mapa-y-lugares{
+        display: grid;
+        gap: 1.5em;
+        grid-template-columns: 55% 1fr;
+        box-shadow: 2px 2px 10px rgba(12, 5, 0, 0.3);
+        /*box-shadow: 2px 2px 10px rgba(255, 106, 0, 0.3);*/
+        background-color: rgb(255, 250, 245);
+        border-radius: 1em;   
+    }
+    .contenedor-mapa{
+        width: 100%;
+        height: 65rem;
+    }
+    .mapa-bellavista{
+        width: 100%;
+        height: 100%;
+        border-radius: 1em 0em 0em 1em;
+    }
+    .interes-mapa{
+        text-align: center;
+        display: block;
+    }
+    .p-interes{
+        text-align: left;
+        margin-top: 2.5rem;
+        font-size: 1.15em;
+    }
+
+    .servicios-con-imagen{
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 1.5rem;
+        text-align: center; 
+    }
+    .grid-lista-contactos-grande{
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 1.5rem;
+        text-align: center;
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+/*
+p-normal=1.15rem
+p-chico=.95rem
+h1=3rem
+h2=2.5rem
+h3=1.6
+
+*/
+@media only screen and (min-width: 1600px){
+    
+    .contenido-habitacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 48vh;
+    } 
+}
+
+@media only screen and (min-width: 1930px){
+    
+    .habitaciones-primera-fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    .habitaciones-segunda-fila{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    
+}
