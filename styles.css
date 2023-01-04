@@ -228,9 +228,14 @@ a.button-center:hover{
 .p-intro-habitacion{
     font-size: 1.15rem;
     margin-top: 1.5em;
-    margin-bottom: 2em;
 }
-.p-esapcios-comunes{
+.p-intro-habitacion-izquierda{
+    font-size: 1.15rem;
+}
+.p-intro-habitacion-derecha{
+    font-size: 1.15rem;
+}
+.p-espacios-comunes{
     font-size: 1.15rem;
     margin-top: 1.5em;
     margin-bottom: 2em;
@@ -277,6 +282,9 @@ a.button-center:hover{
 @media only screen and (min-width: 1200px){
 
     /*arreglar font-size*/
+    .h2-titulos{
+        text-align: center;
+    }
 
     .grid-espacios-comunes{
         display: grid;
@@ -346,6 +354,13 @@ a.button-center:hover{
         grid-template-columns: 1fr 1fr;
         height: 100%;
     }
+    .contenido-intro-habitacion{
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin-bottom: 2em;
+    }
     .img-habitacion{
         grid-column: 2;
         grid-row: span 3;
@@ -364,6 +379,13 @@ a.button-center:hover{
     }
     .p-intro-habitacion{
         font-size: 1.5em;
+        text-align: center;
+    }
+    .p-intro-habitacion-izquierda{
+        font-size: 1.5em;
+    }
+    .p-intro-habitacion-derecha{
+        font-size: 1.5em;
     }
     .p-habitacion-2{
         font-size: 1.5em;
@@ -371,6 +393,11 @@ a.button-center:hover{
     .botones{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .p-espacios-comunes{
+        font-size: 1.5em;
+        text-align: center;
     }
 
     .mapa-y-lugares{
