@@ -242,6 +242,10 @@ a.button-center:hover{
     border-radius: 1em;
 }
 
+.h2-titulos{
+    text-align: center;
+}
+
 @media only screen and (min-width: 700px){
 
     body{
@@ -263,10 +267,6 @@ a.button-center:hover{
 }
 
 @media only screen and (min-width: 1200px){
-
-    .h2-titulos{
-        text-align: center;
-    }
 
     .grid-espacios-comunes{
         display: grid;
@@ -447,7 +447,6 @@ a.button-center:hover{
     
 }
 
-/*4k 3840 x 2160*/
 @media only screen and (min-width: 2561px){
     .logo{
         font-size: 2.3em;
@@ -521,11 +520,3 @@ a.button-center:hover{
         height: 170px;
     }
 }
-
-/*
-1280 x 720
-1920 x 1080
-1920 x 1200
-2560 x 1440
-3840 x 2160
-*/
